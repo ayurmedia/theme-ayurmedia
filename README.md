@@ -13,19 +13,21 @@
 ## Install
 
 ```fish
-$ omf install gentoo
+$ omf install ayurmedia
 ```
 
 
 ## Features
 
-Unofficial Gentoo fish prompt theme which tries to follow Gentoo default bash $PS1.
+Unofficial Ayurmedia fish prompt theme which tries to follow Gentoo default bash $PS1.
 
 * Left-hand side:
 	* user@host for regular user, green color
 	* host for root user, red color
 	* full cwd for regular user, short cwd for root, home dir is replaced by ~
 	* EXTRA: git branch with state info (if applicable)
+	* some extra lines to make prompt more clean
+	* adds "server: " before prompt to make clear that is remote and not localhost
 
 * Right-hand side:
 	* last error code (if applicable)
@@ -34,7 +36,7 @@ Unofficial Gentoo fish prompt theme which tries to follow Gentoo default bash $P
 ## Screenshot
 
 <p align="center">
-<img src="http://i.imgur.com/kNvOfd6.png">
+N/A	
 </p>
 
 # Credits:
