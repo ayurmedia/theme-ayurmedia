@@ -1,4 +1,4 @@
-# fish theme: gentoo
+# fish theme: ayurmedia
 
 function fish_right_prompt
   set -l last_status $status
