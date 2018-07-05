@@ -1,4 +1,4 @@
-# fish theme: gentoo
+# fish theme: ayurmedia
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
@@ -17,6 +17,10 @@ function fish_prompt
   set -l normal (set_color normal)
 
   set -l cwd (pwd | sed -e "s!^$HOME!~!g")
+
+  # add gap
+  echo " "
+
   # output the prompt, left to right:
   if [ (id -u) = "0" ];
     set cwd (basename $cwd)
@@ -42,11 +46,14 @@ function fish_prompt
     echo -n -s ' ' $git_info $normal
   end
 
+ # add a new line
+ echo " "
+
   # terminate with a nice prompt char:
   if [ (id -u) = "0" ];
     set indicate '#'
   else
-    set indicate '$'
+    set indicate '#'
   end
-  echo -n -s $blue " $indicate " $normal
+  echo -n -s $blue "remote: $indicate " $normal
 end
